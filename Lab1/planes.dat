@@ -1,0 +1,15 @@
+set PLANES := av1 av2 av3 av4 av5;
+
+param max_seats :=
+av1 90
+av2 120
+av3 200
+av4 150
+av5 190;
+
+param max_weight :=
+av1 1700
+av2 2700
+av3 1300
+av4 1700
+av5 2000;

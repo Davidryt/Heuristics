@@ -1,0 +1,611 @@
+Problem:    combined
+Rows:       67
+Columns:    231 (231 integer, 210 binary)
+Non-zeros:  714
+Status:     INTEGER OPTIMAL
+Objective:  profit = 43000 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 profit                  43000
+     2 plane_seats[av1]
+                                  90                          90
+     3 plane_seats[av2]
+                                 120                         120
+     4 plane_seats[av3]
+                                 200                         200
+     5 plane_seats[av4]
+                                 150                         150
+     6 plane_seats[av5]
+                                 190                         190
+     7 plane_seats[av6]
+                                 320                         320
+     8 plane_seats[av7]
+                                 580                         580
+     9 plane_weight[av1]
+                                1692                        1700
+    10 plane_weight[av2]
+                                2698                        2700
+    11 plane_weight[av3]
+                                1300                        1300
+    12 plane_weight[av4]
+                                1700                        1700
+    13 plane_weight[av5]
+                                2000                        2000
+    14 plane_weight[av6]
+                                3500                        3500
+    15 plane_weight[av7]
+                                4400                        4400
+    16 min_leisure[av1]
+                                  33            20
+    17 min_leisure[av2]
+                                  70            20
+    18 min_leisure[av3]
+                                  23            20
+    19 min_leisure[av4]
+                                  59            20
+    20 min_leisure[av5]
+                                  46            20
+    21 min_leisure[av6]
+                                 114            20
+    22 min_leisure[av7]
+                                 160            20
+    23 min_business[av1]
+                                  25            10
+    24 min_business[av2]
+                                  32            10
+    25 min_business[av3]
+                                  17            10
+    26 min_business[av4]
+                                  11            10
+    27 min_business[av5]
+                                  24            10
+    28 min_business[av6]
+                                  26            10
+    29 min_business[av7]
+                                  20            10
+    30 min_standard              990           990
+    31 constraint_timeslots[av1]
+                                   1             1             =
+    32 constraint_timeslots[av2]
+                                   1             1             =
+    33 constraint_timeslots[av3]
+                                   1             1             =
+    34 constraint_timeslots[av4]
+                                   1             1             =
+    35 constraint_timeslots[av5]
+                                   1             1             =
+    36 constraint_timeslots[av6]
+                                   1             1             =
+    37 constraint_timeslots[av7]
+                                   1             1             =
+    38 constraint_planes[p01t00]
+                                   0                           1
+    39 constraint_planes[p01t15]
+                                   0                           1
+    40 constraint_planes[p01t30]
+                                   0                           1
+    41 constraint_planes[p01t45]
+                                   0                           1
+    42 constraint_planes[p01t60]
+                                   1                           1
+    43 constraint_planes[p01t75]
+                                   0                           1
+    44 constraint_planes[p02t00]
+                                   0                           1
+    45 constraint_planes[p02t15]
+                                   0                           1
+    46 constraint_planes[p02t30]
+                                   0                           1
+    47 constraint_planes[p02t45]
+                                   1                           1
+    48 constraint_planes[p02t60]
+                                   0                           1
+    49 constraint_planes[p02t75]
+                                   0                           1
+    50 constraint_planes[p03t00]
+                                   1                           1
+    51 constraint_planes[p03t15]
+                                   1                           1
+    52 constraint_planes[p03t30]
+                                   0                           1
+    53 constraint_planes[p03t45]
+                                   0                           1
+    54 constraint_planes[p03t60]
+                                   0                           1
+    55 constraint_planes[p03t75]
+                                   0                           1
+    56 constraint_planes[p04t00]
+                                   1                           1
+    57 constraint_planes[p04t15]
+                                   0                           1
+    58 constraint_planes[p04t30]
+                                   0                           1
+    59 constraint_planes[p04t45]
+                                   0                           1
+    60 constraint_planes[p04t60]
+                                   0                           1
+    61 constraint_planes[p04t75]
+                                   1                           1
+    62 constraint_planes[p05t00]
+                                   0                           1
+    63 constraint_planes[p05t15]
+                                   1                           1
+    64 constraint_planes[p05t30]
+                                   0                           1
+    65 constraint_planes[p05t45]
+                                   0                           1
+    66 constraint_planes[p05t60]
+                                   0                           1
+    67 constraint_planes[p05t75]
+                                   0                           1
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 standard[av1]
+                    *             32
+     2 standard[av2]
+                    *             18
+     3 standard[av3]
+                    *            160
+     4 standard[av4]
+                    *             80
+     5 standard[av5]
+                    *            120
+     6 standard[av6]
+                    *            180
+     7 standard[av7]
+                    *            400
+     8 leisure[av1] *             33
+     9 leisure[av2] *             70
+    10 leisure[av3] *             23
+    11 leisure[av4] *             59
+    12 leisure[av5] *             46
+    13 leisure[av6] *            114
+    14 leisure[av7] *            160
+    15 business[av1]
+                    *             25
+    16 business[av2]
+                    *             32
+    17 business[av3]
+                    *             17
+    18 business[av4]
+                    *             11
+    19 business[av5]
+                    *             24
+    20 business[av6]
+                    *             26
+    21 business[av7]
+                    *             20
+    22 assign[p01t00,av1]
+                    *              0             0             1
+    23 assign[p01t00,av2]
+                    *              0             0             1
+    24 assign[p01t00,av3]
+                    *              0             0             1
+    25 assign[p01t00,av4]
+                    *              0             0             1
+    26 assign[p01t00,av5]
+                    *              0             0             1
+    27 assign[p01t00,av6]
+                    *              0             0             1
+    28 assign[p01t00,av7]
+                    *              0             0             1
+    29 assign[p01t15,av1]
+                    *              0             0             1
+    30 assign[p01t15,av2]
+                    *              0             0             1
+    31 assign[p01t15,av3]
+                    *              0             0             1
+    32 assign[p01t15,av4]
+                    *              0             0             1
+    33 assign[p01t15,av5]
+                    *              0             0             1
+    34 assign[p01t15,av6]
+                    *              0             0             1
+    35 assign[p01t15,av7]
+                    *              0             0             1
+    36 assign[p01t30,av1]
+                    *              0             0             1
+    37 assign[p01t30,av2]
+                    *              0             0             1
+    38 assign[p01t30,av3]
+                    *              0             0             1
+    39 assign[p01t30,av4]
+                    *              0             0             1
+    40 assign[p01t30,av5]
+                    *              0             0             1
+    41 assign[p01t30,av6]
+                    *              0             0             1
+    42 assign[p01t30,av7]
+                    *              0             0             1
+    43 assign[p01t45,av1]
+                    *              0             0             1
+    44 assign[p01t45,av2]
+                    *              0             0             1
+    45 assign[p01t45,av3]
+                    *              0             0             1
+    46 assign[p01t45,av4]
+                    *              0             0             1
+    47 assign[p01t45,av5]
+                    *              0             0             1
+    48 assign[p01t45,av6]
+                    *              0             0             1
+    49 assign[p01t45,av7]
+                    *              0             0             1
+    50 assign[p01t60,av1]
+                    *              0             0             1
+    51 assign[p01t60,av2]
+                    *              0             0             1
+    52 assign[p01t60,av3]
+                    *              0             0             1
+    53 assign[p01t60,av4]
+                    *              1             0             1
+    54 assign[p01t60,av5]
+                    *              0             0             1
+    55 assign[p01t60,av6]
+                    *              0             0             1
+    56 assign[p01t60,av7]
+                    *              0             0             1
+    57 assign[p01t75,av1]
+                    *              0             0             1
+    58 assign[p01t75,av2]
+                    *              0             0             1
+    59 assign[p01t75,av3]
+                    *              0             0             1
+    60 assign[p01t75,av4]
+                    *              0             0             1
+    61 assign[p01t75,av5]
+                    *              0             0             1
+    62 assign[p01t75,av6]
+                    *              0             0             1
+    63 assign[p01t75,av7]
+                    *              0             0             1
+    64 assign[p02t00,av1]
+                    *              0             0             1
+    65 assign[p02t00,av2]
+                    *              0             0             1
+    66 assign[p02t00,av3]
+                    *              0             0             1
+    67 assign[p02t00,av4]
+                    *              0             0             1
+    68 assign[p02t00,av5]
+                    *              0             0             1
+    69 assign[p02t00,av6]
+                    *              0             0             1
+    70 assign[p02t00,av7]
+                    *              0             0             1
+    71 assign[p02t15,av1]
+                    *              0             0             1
+    72 assign[p02t15,av2]
+                    *              0             0             1
+    73 assign[p02t15,av3]
+                    *              0             0             1
+    74 assign[p02t15,av4]
+                    *              0             0             1
+    75 assign[p02t15,av5]
+                    *              0             0             1
+    76 assign[p02t15,av6]
+                    *              0             0             1
+    77 assign[p02t15,av7]
+                    *              0             0             1
+    78 assign[p02t30,av1]
+                    *              0             0             1
+    79 assign[p02t30,av2]
+                    *              0             0             1
+    80 assign[p02t30,av3]
+                    *              0             0             1
+    81 assign[p02t30,av4]
+                    *              0             0             1
+    82 assign[p02t30,av5]
+                    *              0             0             1
+    83 assign[p02t30,av6]
+                    *              0             0             1
+    84 assign[p02t30,av7]
+                    *              0             0             1
+    85 assign[p02t45,av1]
+                    *              0             0             1
+    86 assign[p02t45,av2]
+                    *              0             0             1
+    87 assign[p02t45,av3]
+                    *              1             0             1
+    88 assign[p02t45,av4]
+                    *              0             0             1
+    89 assign[p02t45,av5]
+                    *              0             0             1
+    90 assign[p02t45,av6]
+                    *              0             0             1
+    91 assign[p02t45,av7]
+                    *              0             0             1
+    92 assign[p02t60,av1]
+                    *              0             0             1
+    93 assign[p02t60,av2]
+                    *              0             0             1
+    94 assign[p02t60,av3]
+                    *              0             0             1
+    95 assign[p02t60,av4]
+                    *              0             0             1
+    96 assign[p02t60,av5]
+                    *              0             0             1
+    97 assign[p02t60,av6]
+                    *              0             0             1
+    98 assign[p02t60,av7]
+                    *              0             0             1
+    99 assign[p02t75,av1]
+                    *              0             0             1
+   100 assign[p02t75,av2]
+                    *              0             0             1
+   101 assign[p02t75,av3]
+                    *              0             0             1
+   102 assign[p02t75,av4]
+                    *              0             0             1
+   103 assign[p02t75,av5]
+                    *              0             0             1
+   104 assign[p02t75,av6]
+                    *              0             0             1
+   105 assign[p02t75,av7]
+                    *              0             0             1
+   106 assign[p03t00,av1]
+                    *              0             0             1
+   107 assign[p03t00,av2]
+                    *              0             0             1
+   108 assign[p03t00,av3]
+                    *              0             0             1
+   109 assign[p03t00,av4]
+                    *              0             0             1
+   110 assign[p03t00,av5]
+                    *              0             0             1
+   111 assign[p03t00,av6]
+                    *              0             0             1
+   112 assign[p03t00,av7]
+                    *              1             0             1
+   113 assign[p03t15,av1]
+                    *              1             0             1
+   114 assign[p03t15,av2]
+                    *              0             0             1
+   115 assign[p03t15,av3]
+                    *              0             0             1
+   116 assign[p03t15,av4]
+                    *              0             0             1
+   117 assign[p03t15,av5]
+                    *              0             0             1
+   118 assign[p03t15,av6]
+                    *              0             0             1
+   119 assign[p03t15,av7]
+                    *              0             0             1
+   120 assign[p03t30,av1]
+                    *              0             0             1
+   121 assign[p03t30,av2]
+                    *              0             0             1
+   122 assign[p03t30,av3]
+                    *              0             0             1
+   123 assign[p03t30,av4]
+                    *              0             0             1
+   124 assign[p03t30,av5]
+                    *              0             0             1
+   125 assign[p03t30,av6]
+                    *              0             0             1
+   126 assign[p03t30,av7]
+                    *              0             0             1
+   127 assign[p03t45,av1]
+                    *              0             0             1
+   128 assign[p03t45,av2]
+                    *              0             0             1
+   129 assign[p03t45,av3]
+                    *              0             0             1
+   130 assign[p03t45,av4]
+                    *              0             0             1
+   131 assign[p03t45,av5]
+                    *              0             0             1
+   132 assign[p03t45,av6]
+                    *              0             0             1
+   133 assign[p03t45,av7]
+                    *              0             0             1
+   134 assign[p03t60,av1]
+                    *              0             0             1
+   135 assign[p03t60,av2]
+                    *              0             0             1
+   136 assign[p03t60,av3]
+                    *              0             0             1
+   137 assign[p03t60,av4]
+                    *              0             0             1
+   138 assign[p03t60,av5]
+                    *              0             0             1
+   139 assign[p03t60,av6]
+                    *              0             0             1
+   140 assign[p03t60,av7]
+                    *              0             0             1
+   141 assign[p03t75,av1]
+                    *              0             0             1
+   142 assign[p03t75,av2]
+                    *              0             0             1
+   143 assign[p03t75,av3]
+                    *              0             0             1
+   144 assign[p03t75,av4]
+                    *              0             0             1
+   145 assign[p03t75,av5]
+                    *              0             0             1
+   146 assign[p03t75,av6]
+                    *              0             0             1
+   147 assign[p03t75,av7]
+                    *              0             0             1
+   148 assign[p04t00,av1]
+                    *              0             0             1
+   149 assign[p04t00,av2]
+                    *              1             0             1
+   150 assign[p04t00,av3]
+                    *              0             0             1
+   151 assign[p04t00,av4]
+                    *              0             0             1
+   152 assign[p04t00,av5]
+                    *              0             0             1
+   153 assign[p04t00,av6]
+                    *              0             0             1
+   154 assign[p04t00,av7]
+                    *              0             0             1
+   155 assign[p04t15,av1]
+                    *              0             0             1
+   156 assign[p04t15,av2]
+                    *              0             0             1
+   157 assign[p04t15,av3]
+                    *              0             0             1
+   158 assign[p04t15,av4]
+                    *              0             0             1
+   159 assign[p04t15,av5]
+                    *              0             0             1
+   160 assign[p04t15,av6]
+                    *              0             0             1
+   161 assign[p04t15,av7]
+                    *              0             0             1
+   162 assign[p04t30,av1]
+                    *              0             0             1
+   163 assign[p04t30,av2]
+                    *              0             0             1
+   164 assign[p04t30,av3]
+                    *              0             0             1
+   165 assign[p04t30,av4]
+                    *              0             0             1
+   166 assign[p04t30,av5]
+                    *              0             0             1
+   167 assign[p04t30,av6]
+                    *              0             0             1
+   168 assign[p04t30,av7]
+                    *              0             0             1
+   169 assign[p04t45,av1]
+                    *              0             0             1
+   170 assign[p04t45,av2]
+                    *              0             0             1
+   171 assign[p04t45,av3]
+                    *              0             0             1
+   172 assign[p04t45,av4]
+                    *              0             0             1
+   173 assign[p04t45,av5]
+                    *              0             0             1
+   174 assign[p04t45,av6]
+                    *              0             0             1
+   175 assign[p04t45,av7]
+                    *              0             0             1
+   176 assign[p04t60,av1]
+                    *              0             0             1
+   177 assign[p04t60,av2]
+                    *              0             0             1
+   178 assign[p04t60,av3]
+                    *              0             0             1
+   179 assign[p04t60,av4]
+                    *              0             0             1
+   180 assign[p04t60,av5]
+                    *              0             0             1
+   181 assign[p04t60,av6]
+                    *              0             0             1
+   182 assign[p04t60,av7]
+                    *              0             0             1
+   183 assign[p04t75,av1]
+                    *              0             0             1
+   184 assign[p04t75,av2]
+                    *              0             0             1
+   185 assign[p04t75,av3]
+                    *              0             0             1
+   186 assign[p04t75,av4]
+                    *              0             0             1
+   187 assign[p04t75,av5]
+                    *              1             0             1
+   188 assign[p04t75,av6]
+                    *              0             0             1
+   189 assign[p04t75,av7]
+                    *              0             0             1
+   190 assign[p05t00,av1]
+                    *              0             0             1
+   191 assign[p05t00,av2]
+                    *              0             0             1
+   192 assign[p05t00,av3]
+                    *              0             0             1
+   193 assign[p05t00,av4]
+                    *              0             0             1
+   194 assign[p05t00,av5]
+                    *              0             0             1
+   195 assign[p05t00,av6]
+                    *              0             0             1
+   196 assign[p05t00,av7]
+                    *              0             0             1
+   197 assign[p05t15,av1]
+                    *              0             0             1
+   198 assign[p05t15,av2]
+                    *              0             0             1
+   199 assign[p05t15,av3]
+                    *              0             0             1
+   200 assign[p05t15,av4]
+                    *              0             0             1
+   201 assign[p05t15,av5]
+                    *              0             0             1
+   202 assign[p05t15,av6]
+                    *              1             0             1
+   203 assign[p05t15,av7]
+                    *              0             0             1
+   204 assign[p05t30,av1]
+                    *              0             0             1
+   205 assign[p05t30,av2]
+                    *              0             0             1
+   206 assign[p05t30,av3]
+                    *              0             0             1
+   207 assign[p05t30,av4]
+                    *              0             0             1
+   208 assign[p05t30,av5]
+                    *              0             0             1
+   209 assign[p05t30,av6]
+                    *              0             0             1
+   210 assign[p05t30,av7]
+                    *              0             0             1
+   211 assign[p05t45,av1]
+                    *              0             0             1
+   212 assign[p05t45,av2]
+                    *              0             0             1
+   213 assign[p05t45,av3]
+                    *              0             0             1
+   214 assign[p05t45,av4]
+                    *              0             0             1
+   215 assign[p05t45,av5]
+                    *              0             0             1
+   216 assign[p05t45,av6]
+                    *              0             0             1
+   217 assign[p05t45,av7]
+                    *              0             0             1
+   218 assign[p05t60,av1]
+                    *              0             0             1
+   219 assign[p05t60,av2]
+                    *              0             0             1
+   220 assign[p05t60,av3]
+                    *              0             0             1
+   221 assign[p05t60,av4]
+                    *              0             0             1
+   222 assign[p05t60,av5]
+                    *              0             0             1
+   223 assign[p05t60,av6]
+                    *              0             0             1
+   224 assign[p05t60,av7]
+                    *              0             0             1
+   225 assign[p05t75,av1]
+                    *              0             0             1
+   226 assign[p05t75,av2]
+                    *              0             0             1
+   227 assign[p05t75,av3]
+                    *              0             0             1
+   228 assign[p05t75,av4]
+                    *              0             0             1
+   229 assign[p05t75,av5]
+                    *              0             0             1
+   230 assign[p05t75,av6]
+                    *              0             0             1
+   231 assign[p05t75,av7]
+                    *              0             0             1
+
+Integer feasibility conditions:
+
+INT.PE: max.abs.err. = 0.00e+00 on row 0
+        max.rel.err. = 0.00e+00 on row 0
+        High quality
+
+INT.PB: max.abs.err. = 0.00e+00 on row 0
+        max.rel.err. = 0.00e+00 on row 0
+        High quality
+
+End of output

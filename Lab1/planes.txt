@@ -1,0 +1,91 @@
+Problem:    planes
+Rows:       22
+Columns:    15 (15 integer, 0 binary)
+Non-zeros:  60
+Status:     INTEGER OPTIMAL
+Objective:  profit = 26190 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 profit                  26190
+     2 plane_seats[av1]
+                                  90                          90
+     3 plane_seats[av2]
+                                 120                         120
+     4 plane_seats[av3]
+                                 200                         200
+     5 plane_seats[av4]
+                                 150                         150
+     6 plane_seats[av5]
+                                 190                         190
+     7 plane_weight[av1]
+                                1692                        1700
+     8 plane_weight[av2]
+                                2700                        2700
+     9 plane_weight[av3]
+                                1298                        1300
+    10 plane_weight[av4]
+                                1700                        1700
+    11 plane_weight[av5]
+                                2000                        2000
+    12 min_leisure[av1]
+                                  33            20
+    13 min_leisure[av2]
+                                  27            20
+    14 min_leisure[av3]
+                                  27            20
+    15 min_leisure[av4]
+                                  20            20
+    16 min_leisure[av5]
+                                  46            20
+    17 min_business[av1]
+                                  25            10
+    18 min_business[av2]
+                                  53            10
+    19 min_business[av3]
+                                  15            10
+    20 min_business[av4]
+                                  30            10
+    21 min_business[av5]
+                                  24            10
+    22 min_standard              450           450
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 standard[av1]
+                    *             32
+     2 standard[av2]
+                    *             40
+     3 standard[av3]
+                    *            158
+     4 standard[av4]
+                    *            100
+     5 standard[av5]
+                    *            120
+     6 leisure[av1] *             33
+     7 leisure[av2] *             27
+     8 leisure[av3] *             27
+     9 leisure[av4] *             20
+    10 leisure[av5] *             46
+    11 business[av1]
+                    *             25
+    12 business[av2]
+                    *             53
+    13 business[av3]
+                    *             15
+    14 business[av4]
+                    *             30
+    15 business[av5]
+                    *             24
+
+Integer feasibility conditions:
+
+INT.PE: max.abs.err. = 0.00e+00 on row 0
+        max.rel.err. = 0.00e+00 on row 0
+        High quality
+
+INT.PB: max.abs.err. = 0.00e+00 on row 0
+        max.rel.err. = 0.00e+00 on row 0
+        High quality
+
+End of output
